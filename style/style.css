@@ -1,0 +1,39 @@
+
+header{
+    width: 100%;
+    height: 60px;
+    background-color: #2E3A46;
+}
+header img{
+    width: 45px;
+    margin: .5rem;
+}
+
+main{
+    width: 100%;
+    background-color: #1E2D3B;
+}
+
+main div.ms-container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.gap{
+    gap: 18px 30px;
+}
+
+div.ms-card{
+    width: 160px;
+    height: 290px;
+    background-color: #2E3A46;
+}
+
+div.ms-card h5{
+    color: white;
+}
+
+div.ms-card p{
+    color: #7D7269;
+    font-size: .9rem;
+}

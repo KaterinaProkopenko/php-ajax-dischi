@@ -21,16 +21,12 @@
             <div class="ms-container">
                 <div class="row justify-content-center m-0">
                     <div class="col-12 d-flex justify-content-center flex-wrap py-5 gap text-white">
-                        
-                        <?php foreach($discs as $disc) {;?>
-                            <div class="ms-card text-center">
-                                <img class="img-fluid p-3" src="<?= $disc['poster']?>" alt="<?= $disc['title']?>">
-                                <h5 class="fw-bold mb-2 px-2 text-uppercase"><?= $disc['title']?></h5>
-                                <p class="m-0 lh-sm"><?= $disc['author']?></p>
-                                <p class="m-0 lh-sm"><?= $disc['year']?></p>
-                            </div>
-                        <?php };?>
-                        
+                        <div v-for="disc in discs" class="ms-card text-center">
+                            <img class="img-fluid p-3" :src="disc.poster" :alt="disc.title">
+                            <h5 class="fw-bold mb-2 px-2 text-uppercase">{{disc.title}}</h5>
+                            <p class="m-0 lh-sm">{{disc.author}}</p>
+                            <p class="m-0 lh-sm">{{disc.year}}</p>
+                        </div>
                     </div>
                 </div>
             </div>
